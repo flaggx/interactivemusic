@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import React, { useState } from 'react';
 import { useQuery } from '@apollo/client';
-import { GET_TRACKS } from './queries';
+import { GET_TRACKS } from './queries/queries.js';
 import { Howl } from 'howler';
 
 const App = () => {
