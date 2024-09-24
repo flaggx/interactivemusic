@@ -1,15 +1,16 @@
-import { gql } from 'graphql-tag';
+import user from './user.js';
+import account from './account.js'
+import playlist from './playlist.js'
+import subscription from './subscription.js'
+import track from './track.js'
 
-const typeDefs = gql`
-  type Track {
-    id: ID!
-    name: String!
-    url: String!
-  }
 
-  type Query {
-    tracks: [Track]
-  }
-`;
+const typeDefs = [
+    user,
+    account,
+    playlist,
+    subscription,
+    track
+]
 
 export default typeDefs;
